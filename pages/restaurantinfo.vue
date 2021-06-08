@@ -1,9 +1,8 @@
 <template>
   <main class="container restaurant">
-    <div class="restauantheading">
-      <h1>Restauants</h1>
+    <div class="restaurantheading">
+      <h1>Restaurants</h1>
       <AppSelect @change="selectedRestaurant = $event" />
-      <pre>{{ $data }}</pre>
     </div>
     <AppRestaurantInfo :datasource="filteredRestaurants" />
   </main>
